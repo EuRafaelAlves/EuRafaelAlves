@@ -1,0 +1,41 @@
+
+def calcular_media(arquivos, periodos_desejados):
+    # Abrir o arquivo
+    f = open(arquivos, "r")
+
+    # Salvar as linhas numa lista
+    datalist = f.readlines()
+
+    # Fechar arquivo
+    f.close()
+
+    # Função para pegar o período de uma linha
+    def pegar_periodo(row):
+        return int(row.split(',')[-1].strip())
+
+    # Filtrar as linhas com período igual a 4
+    Periodo_4 = []
+    for row in datalist[1:]:  # Ignora o cabeçalho
+        periodo = pegar_periodo(row)
+        if periodo == periodos_desejados:
+            Periodo_4.append(row)
+
+    # Função para pegar a nota de uma linha
+    def pegar_notas(row):
+        return int(row.split(',')[1].strip())
+
+    # Obter as notas das linhas filtradas
+    notas = []
+    for row in Periodo_4:
+        nota = pegar_notas(row)
+        notas.append(nota)
+
+    # Função para calcular a média de uma lista
+    def media(lista):
+        return sum(lista) / len(lista)
+
+    # Calcular e imprimir a média das notas
+    media_final = media(notas)
+    print(media_final)
+
+calcular_media("uftm.txt", 3)
