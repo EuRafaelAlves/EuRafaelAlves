@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Analytics Store - E-commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-dark">
+
+<!-- MENU SUPERIOR -->
+<nav class="container d-flex justify-content-between align-items-center py-3">
+  <div class="d-flex align-items-center me-3">
+    <img src="https://comtermica.com.br/img/logomini.png" alt="Logo Analytics" style="height: 40px;">
+  </div>
+  <div class="input-group w-50">
+    <input type="text" class="form-control" placeholder="Buscar produtos, marcas etc">
+    <button class="btn btn-warning">Buscar</button>
+  </div>
+  <div class="text-end small">
+    <a href="#" class="text-primary text-decoration-none me-2">Entrar</a>
+    <a href="#" class="text-primary text-decoration-none me-2">Criar conta</a>
+    <a href="#" class="text-primary text-decoration-none">Carrinho</a>
+  </div>
+</nav>
+
+  <!-- CATEGORIAS HORIZONTAIS -->
+  <div class="bg-light py-2 border-top border-bottom">
+    <div class="container d-flex flex-wrap gap-3 small">
+      <a href="#" class="text-decoration-none text-dark">Ofertas do dia</a>
+      <a href="#" class="text-decoration-none text-dark">Supermercado</a>
+      <a href="#" class="text-decoration-none text-dark">Eletrônicos</a>
+      <a href="#" class="text-decoration-none text-dark">Moda</a>
+      <a href="#" class="text-decoration-none text-dark">Casa, Móveis e Decoração</a>
+      <a href="#" class="text-decoration-none text-dark">Ferramentas e Jardim</a>
+      <a href="#" class="text-decoration-none text-dark">Esporte e Lazer</a>
+      <a href="#" class="text-decoration-none text-dark">Ver mais</a>
+    </div>
+  </div>
+
+  <!-- BANNER PRINCIPAL COM IMAGEM -->
+  <div class="container mt-4 mb-5">
+    <div class="rounded overflow-hidden">
+      <img src="https://img.cdndsgni.com/preview/10200530.jpg"
+           class="img-fluid w-100" alt="Banner principal">
+    </div>
+  </div>
+
+  <!-- OFERTAS DO DIA (PRODUTOS MERCADO LIVRE) -->
+  <div class="container mb-5">
+    <h4 class="mb-4 text-success">Ofertas do Dia</h4>
+    <div class="row g-3">
+      <!-- Produto 1: HP Laptop 2022 -->
+      <div class="col-6 col-md-3">
+        <div class="border p-2 text-center">
+          <img src="https://m.media-amazon.com/images/I/617ASXJWX2L.__AC_SY300_SX300_QL70_ML2_.jpg" class="img-fluid mb-2" alt="HP Laptop 2022">
+          <p class="mb-1">HP Laptop 2022</p>
+          <p class="fw-bold text-success">R$ 3.499,00</p>
+        </div>
+      </div>
+      <!-- Produto 2: Laptop HP Pavilion (usado) -->
+      <div class="col-6 col-md-3">
+        <div class="border p-2 text-center">
+          <img src="https://m.media-amazon.com/images/I/51qYgtqNzYL.__AC_SX300_SY300_QL70_ML2_.jpg" class="img-fluid mb-2" alt="HP Pavilion usado">
+          <p class="mb-1">HP Pavilion i5 usado</p>
+          <p class="fw-bold text-success">R$ 900,00</p>
+        </div>
+      </div>
+      <!-- Produto 3: Laptop infantil azul -->
+      <div class="col-6 col-md-3">
+        <div class="border p-2 text-center">
+          <img src="https://m.media-amazon.com/images/I/61hsC+UotVL._AC_SX425_.jpg" class="img-fluid mb-2" alt="Laptop infantil azul">
+          <p class="mb-1">Laptop Infantil Azul</p>
+          <p class="fw-bold text-success">R$ 189,00</p>
+        </div>
+      </div>
+      <!-- Produto 4: Laptop infantil rosa -->
+      <div class="col-6 col-md-3">
+        <div class="border p-2 text-center">
+          <img src="https://m.media-amazon.com/images/I/61IrteUbAHL.__AC_SX300_SY300_QL70_ML2_.jpg" class="img-fluid mb-2" alt="Laptop infantil rosa">
+          <p class="mb-1">Laptop Infantil Rosa</p>
+          <p class="fw-bold text-success">R$ 19,99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- CATEGORIAS EM DESTAQUE -->
+<div class="container mb-5">
+  <h4 class="mb-4 text-success">Categorias em Destaque</h4>
+  <div class="row g-3">
+
+    <!-- Categoria: Informática -->
+    <div class="col-6 col-md-3 text-center">
+      <div class="border p-2 bg-white">
+        <img src="https://m.media-amazon.com/images/I/617ASXJWX2L._AC_SY145_.jpg"
+             class="img-fluid mb-2" style="height:200px; object-fit:cover;" alt="Informática">
+        <p class="mb-0">Informática</p>
+      </div>
+    </div>
+
+    <!-- Categoria: Novidades -->
+    <div class="col-6 col-md-3 text-center">
+      <div class="border p-2 bg-white">
+        <img src="https://m.media-amazon.com/images/I/71GbMooBh7L._SX3000_.jpg"
+             class="img-fluid mb-2" style="height:200px; object-fit:cover;" alt="Brinquedos">
+        <p class="mb-0">Novidades</p>
+      </div>
+    </div>
+
+    <!-- Categoria: Ofertas mais amadas -->
+    <div class="col-6 col-md-3 text-center">
+      <div class="border p-2 bg-white">
+        <img src="https://m.media-amazon.com/images/I/618Bb+QzCmL._AC_SY145_.jpg"
+             class="img-fluid mb-2" style="height:200px; object-fit:cover;" alt="Ofertas mais amadas">
+        <p class="mb-0">Ofertas mais amadas</p>
+      </div>
+    </div>
+
+    <!-- Categoria: AOfertas em Beleza -->
+    <div class="col-6 col-md-3 text-center">
+      <div class="border p-2 bg-white">
+        <img src="https://m.media-amazon.com/images/I/7149EgpvHmL._AC_SY145_.jpg"
+             class="img-fluid mb-2" style="height:200px; object-fit:cover;" alt="AOfertas em Beleza">
+        <p class="mb-0">AOfertas em Beleza</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-light border-top py-5 mt-5">
+    <div class="container">
+      <div class="row text-start small">
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-bold">Compras</h6><ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Ajuda</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Como comprar</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Prazo de entrega</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-bold">Venda Conosco</h6><ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Seja um vendedor</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Políticas de vendas</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-bold">Institucional</h6><ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Sobre o E‑commerce</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Trabalhe conosco</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h6 class="fw-bold">Redes Sociais</h6><ul class="list-unstyled">
+            <li><a href="#" class="text-dark text-decoration-none">Facebook</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">Instagram</a></li>
+            <li><a href="#" class="text-dark text-decoration-none">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center text-muted small mt-4">© 2025 Analytics Store. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
